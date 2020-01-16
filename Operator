@@ -1,0 +1,29 @@
+
+//pread Operator for array
+const numbers = [1, 2, 3];
+const newNumber = [numbers, 4];
+
+console.log(newNumber);
+
+const oldNumber = [...numbers, 4];
+
+console.log(oldNumber);
+
+//Spread Operator for Object
+const person = {
+  name: 'Siri'
+};
+
+const newPerson = {
+  ...person,
+  age: 20
+};
+
+console.log(newPerson);
+
+//Rest Operator
+const filter = (...a) => {
+  return a.filter(el => el === 1);
+}
+
+console.log(filter(1, 2, 3 ));
